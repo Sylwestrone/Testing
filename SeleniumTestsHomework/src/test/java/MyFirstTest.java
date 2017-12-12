@@ -7,10 +7,12 @@ public class MyFirstTest {
 
     @Test
     public void startTest() {
-        System.setProperty("webdriver.gecko.driver", "/home/ozinii/Selenium/Drivers/geckodriver-v0.19.1-linux64/geckodriver");
+        System.setProperty("webdriver.gecko.driver", "D:\\Pliki u¿ytkownika\\Student\\Pobrane\\geckodriver.exe");
         WebDriver webDriver = new FirefoxDriver();
-        webDriver.navigate().to("http://seleniumsimplified.com");
+        webDriver.navigate().to("http://www.seleniumeasy.com/test/basic-first-form-demo.html");
 
-        Assert.assertEquals("title should start differently", webDriver.getTitle().startsWith("Selenium Simplified"));
+        //Assert.assertEquals("test", webdr);
+        
+       // webDriver.close();
     }
 }
